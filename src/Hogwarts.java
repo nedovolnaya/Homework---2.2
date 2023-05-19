@@ -1,17 +1,15 @@
 public abstract class Hogwarts {
-    private static String name;
-    private static int powerOfMagic;
-    private static int distanceOfTransgression;
+    private String name;
+    private int powerOfMagic;
+    private int distanceOfTransgression;
 
     public Hogwarts(String name, int powerOfMagic, int distanceOfTransgression) {
-        Hogwarts.name = name;
-        Hogwarts.powerOfMagic = powerOfMagic;
-        Hogwarts.distanceOfTransgression = distanceOfTransgression;
+        this.name = name;
+        this.powerOfMagic = powerOfMagic;
+        this.distanceOfTransgression = distanceOfTransgression;
     }
 
-    public static void printCommonStats() {
-        System.out.print("имя:" + name + " " + "Сила магии:" + powerOfMagic + " " + "трансгрессия:" + distanceOfTransgression + " ");
-    }
+
 
     public int getPowerOfMagic() {
         return powerOfMagic;
