@@ -11,15 +11,6 @@ public class Gryffindor extends Hogwarts {
         this.bravery = bravery;
     }
 
-    public static void printGryffindorStats(Gryffindor[] gryffindors) {
-        for (int i = 0; i < gryffindors.length; i++) {
-            Gryffindor gryffindor = gryffindors[i];
-            System.out.println("Имя:" + gryffindor.getName() + " " +
-                    "Сила магии:" + gryffindor.getPowerOfMagic() + " " + "Трансгрессия:" + gryffindor.getDistanceOfTransgression() + " "
-                    + "Благородство:" + gryffindor.getNobility() + " " + "Честь:" + gryffindor.getHonor() + " " + "Храбрость:" + gryffindor.getBravery());
-        }
-    }
-
     public static void compareGryffindors(Gryffindor first, Gryffindor second, Gryffindor third) {
         var firstPoints = first.getBravery() + first.getHonor() + first.getNobility();
         var secondPoints = second.getBravery() + second.getHonor() + second.getNobility();
@@ -46,6 +37,18 @@ public class Gryffindor extends Hogwarts {
 
     public int getBravery() {
         return bravery;
+    }
+
+    public void setNobility(int nobility) {
+        this.nobility = nobility;
+    }
+
+    public void setHonor(int honor) {
+        this.honor = honor;
+    }
+
+    public void setBravery(int bravery) {
+        this.bravery = bravery;
     }
 
     @Override

@@ -11,15 +11,6 @@ public class Hufflepuff extends Hogwarts {
         this.honesty = honesty;
     }
 
-    public static void printHufflepuffStats(Hufflepuff[] hufflepuffs) {
-        for (int i = 0; i < hufflepuffs.length; i++) {
-            Hufflepuff hufflepuff = hufflepuffs[i];
-            System.out.println("Имя:" + hufflepuff.getName() + " " +
-                    "Сила магии:" + hufflepuff.getPowerOfMagic() + " " + "Трансгрессия:" + hufflepuff.getDistanceOfTransgression() + " "
-                    + "Трудолюбие:" + hufflepuff.getIndustriousness() + " " + "Верность:" + hufflepuff.getLoyalty() + " "
-                    + "Честность:" + hufflepuff.getHonesty());
-        }
-    }
     public static void compareHufflepuff(Hufflepuff first, Hufflepuff second, Hufflepuff third) {
         var firstPoints = first.getLoyalty() + first.getHonesty() + first.getIndustriousness();
         var secondPoints = second.getLoyalty() + second.getHonesty() + second.getIndustriousness();
@@ -46,6 +37,18 @@ public class Hufflepuff extends Hogwarts {
 
     public int getHonesty() {
         return honesty;
+    }
+
+    public void setIndustriousness(int industriousness) {
+        this.industriousness = industriousness;
+    }
+
+    public void setLoyalty(int loyalty) {
+        this.loyalty = loyalty;
+    }
+
+    public void setHonesty(int honesty) {
+        this.honesty = honesty;
     }
 
     @Override

@@ -13,15 +13,6 @@ public class Ravenclaw extends Hogwarts {
         this.creation = creation;
     }
 
-    public static void printRavenclawStats(Ravenclaw[] ravenclaws) {
-        for (int i = 0; i < ravenclaws.length; i++) {
-            Ravenclaw ravenclaw = ravenclaws[i];
-            System.out.println("Имя:" + ravenclaw.getName() + " " + "Сила магии:" +
-                    ravenclaw.getPowerOfMagic() + " " + "Трансгрессия:" + ravenclaw.getDistanceOfTransgression() + " "
-                    + "Ум:" + ravenclaw.getIntelligence() + " " + "Мудрость:" + ravenclaw.getWisdom() + " "
-                    + "Остроумие:" + ravenclaw.getWit() + "Творчество:" + ravenclaw.getCreation());
-        }
-    }
     public static void compareRavenclaw(Ravenclaw first, Ravenclaw second, Ravenclaw third) {
         var firstPoints = first.getIntelligence() + first.getWisdom() + first.getWit() + first.getCreation();
         var secondPoints = second.getIntelligence() + second.getWisdom() + second.getWit() + second.getCreation();
@@ -52,6 +43,22 @@ public class Ravenclaw extends Hogwarts {
 
     public int getCreation() {
         return creation;
+    }
+
+    public void setIntelligence(int intelligence) {
+        this.intelligence = intelligence;
+    }
+
+    public void setWisdom(int wisdom) {
+        this.wisdom = wisdom;
+    }
+
+    public void setWit(int wit) {
+        this.wit = wit;
+    }
+
+    public void setCreation(int creation) {
+        this.creation = creation;
     }
 
     @Override

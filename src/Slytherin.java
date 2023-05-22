@@ -15,15 +15,6 @@ public class Slytherin extends Hogwarts {
         this.masterful = masterful;
     }
 
-    public static void printSlytherinStats(Slytherin[] slytherins) {
-        for (int i = 0; i < slytherins.length; i++) {
-            Slytherin slytherin = slytherins[i];
-            System.out.println("Имя:" + slytherin.getName() + " " +
-                    "Сила магии:" + slytherin.getPowerOfMagic() + " " + "Трансгрессия:" + slytherin.getDistanceOfTransgression() + " "
-                    + "Хитрость:" + slytherin.getTrick() + " " + "Решительность:" + slytherin.getDetermination() + " " + "Амбициозность:" + slytherin.getAmbition() +
-                    "Находчивость: " + slytherin.getInventiveness() + " " + "Жажда власти: " + slytherin.getMasterful());
-        }
-    }
     public static void compareSlytherin(Slytherin first, Slytherin second, Slytherin third) {
         var firstPoints = first.getTrick() + first.getDetermination() + first.getAmbition() + first.getInventiveness() + first.getMasterful();
         var secondPoints = second.getTrick() + second.getDetermination() + second.getAmbition() + second.getInventiveness() + second.getMasterful();
@@ -58,6 +49,26 @@ public class Slytherin extends Hogwarts {
 
     public int getMasterful() {
         return masterful;
+    }
+
+    public void setTrick(int trick) {
+        this.trick = trick;
+    }
+
+    public void setDetermination(int determination) {
+        this.determination = determination;
+    }
+
+    public void setAmbition(int ambition) {
+        this.ambition = ambition;
+    }
+
+    public void setInventiveness(int inventiveness) {
+        this.inventiveness = inventiveness;
+    }
+
+    public void setMasterful(int masterful) {
+        this.masterful = masterful;
     }
 
     @Override
